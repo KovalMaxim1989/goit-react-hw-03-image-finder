@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { createPortal } from 'react-dom';
-import { Backdrop, ModalWindow } from './Modal.styled';
+import { Backdrop, ModalWindow, CloseButton } from './Modal.styled';
+import { CgCloseR } from 'react-icons/cg';
 
 export default class Modal extends Component {
   componentDidMount() {
@@ -29,13 +30,13 @@ export default class Modal extends Component {
     return createPortal(
       <Backdrop onClick={this.handleBackdrop}>
         <ModalWindow>
-          <button
+          <CloseButton
             type="button"
             onClick={onClose}
-            style={{ position: 'absolute' }}
+            // style={{ position: 'absolute' }}
           >
-            Close
-          </button>
+            <CgCloseR />
+          </CloseButton>
           <img
             src={currentImageUrl}
             alt={currentImageDescription}

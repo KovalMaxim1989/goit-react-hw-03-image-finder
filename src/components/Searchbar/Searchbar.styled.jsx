@@ -14,9 +14,8 @@ export const Header = styled.header`
   padding-top: 12px;
   padding-bottom: 12px;
   color: #fff;
-  background-color: #3f51b5;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: #313131;
+  box-shadow: 2px 5px 10px 2px rgba(254, 60, 1, 0.9);
 `;
 
 export const Form = styled.form`
@@ -27,6 +26,10 @@ export const Form = styled.form`
   background-color: #fff;
   border-radius: 3px;
   overflow: hidden;
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 6px 2px rgba(254, 60, 1, 0.9);
+  }
 `;
 
 export const Button = styled.button`
@@ -40,6 +43,7 @@ export const Button = styled.button`
   outline: none;
   &:hover {
     opacity: 1;
+    background-color: rgba(254, 60, 1, 0.9);
   }
 `;
 
