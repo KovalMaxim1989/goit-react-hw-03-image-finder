@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { Header, Form, Button, Label, Input } from './Searchbar.styled';
+import { GoSearch } from 'react-icons/go';
 
 export default class Searchbar extends Component {
   state = {
@@ -29,7 +30,10 @@ export default class Searchbar extends Component {
       <Header>
         <Form onSubmit={this.onSubmit}>
           <Button type="submit" style={{ marginRight: '10px' }}>
-            <Label>Search</Label>
+            <Label>
+              <GoSearch />
+              Search
+            </Label>
           </Button>
 
           <Input
