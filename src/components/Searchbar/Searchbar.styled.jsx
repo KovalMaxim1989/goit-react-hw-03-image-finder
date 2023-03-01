@@ -21,6 +21,7 @@ export const Header = styled.header`
 export const Form = styled.form`
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 600px;
   background-color: #fff;
@@ -54,6 +55,7 @@ export const Label = styled.span`
 export const Input = styled.input`
   display: inline-block;
   width: 100%;
+  height: 30px;
   font: inherit;
   font-size: 20px;
   border: none;
@@ -62,6 +64,6 @@ export const Input = styled.input`
   padding-right: 4px;
   &::placeholder {
     font: inherit;
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
